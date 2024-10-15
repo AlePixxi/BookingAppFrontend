@@ -1,1 +1,37 @@
-<p>register works!</p>
+<div class="register-container">
+    <mat-card class="register-card">
+      <mat-card-header>
+        <mat-card-title>Registrati</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <form>
+          <mat-form-field appearance="fill" class="full-width">
+            <mat-label>Nome</mat-label>
+            <input matInput type="text" placeholder="Inserisci il tuo nome" required>
+          </mat-form-field>
+          <mat-form-field appearance="fill" class="full-width">
+            <mat-label>Email</mat-label>
+            <input matInput type="email" placeholder="Inserisci la tua email" required>
+          </mat-form-field>
+          <mat-form-field appearance="fill" class="full-width">
+            <mat-label>Password</mat-label>
+            <input matInput type="password" placeholder="Inserisci la tua password" required>
+          </mat-form-field>
+          <mat-form-field appearance="fill" class="full-width">
+            <mat-label>Conferma Password</mat-label>
+            <input matInput type="password" placeholder="Conferma la tua password" required>
+          </mat-form-field>
+          <mat-label>Registrati come: </mat-label>
+            <mat-radio-group>
+                <mat-radio-button value="host" style="margin-right: 10%;">Host</mat-radio-button>
+                <mat-radio-button value="cliente">Cliente</mat-radio-button>
+            </mat-radio-group>
+          <button mat-raised-button color="primary" class="full-width">Registrati</button>
+        </form>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-button color="accent" routerLink="/auth/login">Hai già un account? Accedi</button>
+      </mat-card-actions>      
+    </mat-card>
+  </div>
+  

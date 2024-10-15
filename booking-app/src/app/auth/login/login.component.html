@@ -1,1 +1,24 @@
-<p>login works!</p>
+<div class="login-container">
+    <mat-card class="login-card">
+      <mat-card-header>
+        <mat-card-title>Login</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <form>
+          <mat-form-field appearance="fill" class="full-width">
+            <mat-label>Email</mat-label>
+            <input matInput type="email" placeholder="Inserisci la tua email" required>
+          </mat-form-field>
+          <mat-form-field appearance="fill" class="full-width">
+            <mat-label>Password</mat-label>
+            <input matInput type="password" placeholder="Inserisci la tua password" required>
+          </mat-form-field>
+          <button mat-raised-button color="primary" class="full-width">Accedi</button>
+        </form>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-button color="accent" routerLink="/auth/register">Non hai un account? Registrati</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+  
